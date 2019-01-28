@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="console-log" target="SYSTEM_OUT">
+ 	        <PatternLayout>
+		    		<pattern>[%t] %c{1} - %m%n</pattern>
+		    </PatternLayout>
+        </Console>
+ 
+		  <RollingFile name="trace" fileName="log/trace.log"
+  					filePattern="log/backup/trace-%d{yyyy-MM-dd}.log">
+		  	<PatternLayout>
+		    		<pattern>[%t] %c{1} - %m%n</pattern>
+		    </PatternLayout>
+		    <Policies>
+		    		<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+		    </Policies>
+		  </RollingFile>        
+
+    </Appenders>
+    
+    <Loggers>
+	    	<AsyncLogger name="mx.budgie.chat" level="TRACE" additivity="false">
+	    		<appender-ref ref="trace" />
+	        <appender-ref ref="console-log"/>	                   
+    		</AsyncLogger>
+    		
+    		<AsyncRoot level="INFO" additivity="false">
+    			<appender-ref ref="trace"/>
+        		<appender-ref ref="console-log"/>
+    		</AsyncRoot>
+    </Loggers>
+</Configuration>

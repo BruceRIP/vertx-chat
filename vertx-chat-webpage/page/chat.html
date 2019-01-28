@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>vert.x</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <!-- CSS Files -->
+  <link href="../assets/css/material-dashboard.min.css" rel="stylesheet" />
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="../assets/css/demo.css" rel="stylesheet" />  
+</head>
+
+<body class="">
+  <div class="wrapper ">   
+    <div class="main-panel">      
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title"><strong>VERT.X</strong></h4>
+                  <p class="card-category">Developing chat with SockJS and Vert.x</p>
+                </div>                                
+                <div class="card-body">
+                  <form>                  
+                    <div class="row">                      
+                      <div class="col-md-12 pl-md-1">
+                        <div class="form-group">
+                          <label>Incoming Messages</label>
+                          <div id="input" class="form-control" style="height: 350px !important;overflow: scroll"></div>
+                        </div>
+                      </div>
+                    </div>
+                    </br>                                     
+                    <div class="row">
+                      <div class="col-md-8">
+                        <div class="form-group">
+                          <label>Type message</label>
+                          <textarea id="message" rows="1" cols="50" class="form-control"></textarea>                        
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer">
+                  <button id="sendMessage" type="submit" class="btn btn-fill btn-primary">Send</button>
+                </div>
+              </div>
+            </div>           
+          </div>
+        </div>
+      </div>      
+    </div>
+  </div> 
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>  
+  <script src="../assets/js/core/material-dashboard.min.js?v=2.1.1" type="text/javascript"></script>  
+  <!-- SockJs for Vert.x library -->
+  <script src="../assets/js/plugins/sockjs.1.3.0.min.js"></script>
+  <script src="../assets/js/plugins/vertx-eventbus.3.6.0.min.js"></script>  
+  <script src="../assets/js/plugins/eventbus-registry.js"></script>   
+  <script src="../assets/js/chat-controller.js"></script>
+</body>
+
+</html>
