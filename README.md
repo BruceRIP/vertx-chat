@@ -2,7 +2,7 @@
 Chatting is an example of how to implement Vert.X eventbus, tool to build reactive systems.
 In this repository you will find an implementation with Vert.x to build an application chat.
 
-## The application consiste in two parts 
+## The application has two parts 
 1) front-end. It build with html, bootstrap, javascript and jquery.
 2) backend. it build with vert.x 3.5.3
 
