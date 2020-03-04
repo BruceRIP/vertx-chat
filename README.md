@@ -1,15 +1,16 @@
-# Chat with Vert.x Event Bus
+![](https://billers-images.s3.amazonaws.com/Budgie_horizontal_blanco-size.png)
+# Chat with Vert.X Event Bus
 Chatting is an example of how to implement Vert.X eventbus, tool to build reactive systems.
-In this repository you will find an implementation with Vert.x to build an application chat.
+In this repository you will find an implementation with Vert.x to build a chat application.
 
 ## The application consiste in two parts 
-1) front-end. It build with html, bootstrap, javascript and jquery.
-2) backend. it build with vert.x 3.5.3
+1) front-end. It was built with html, bootstrap, javascript and jquery.
+2) backend. It was built with vert.x 3.5.3
 
 ## Requirements  
 - JDK 8
-- Internet (To download dependecies)
 - Gradle
+- Vert.X 3.5.3
 - Web Browser
 
 ## Downloading the code
