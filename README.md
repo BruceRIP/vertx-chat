@@ -1,3 +1,4 @@
+![](https://billers-images.s3.amazonaws.com/Budgie_horizontal_blanco-size.png)
 # Chat with Vert.X Event Bus
 Chatting is an example of how to implement Vert.X eventbus, tool to build reactive systems.
 In this repository you will find an implementation with Vert.x to build a chat application.
