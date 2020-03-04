@@ -26,7 +26,6 @@ public class ChatEventBus extends AbstractVerticle{
 	protected final Logger logger = LogManager.getLogger();
 	private int port = 7770;
 		
-	@SuppressWarnings("deprecation")
 	@Override
 	public void start(Future<Void> startFuture) throws Exception {
 		Router router = Router.router(vertx);					
@@ -38,7 +37,7 @@ public class ChatEventBus extends AbstractVerticle{
 		/**
 		 * Creating HTTP server for attending request
 		 */
-        vertx.createHttpServer().requestHandler(router::accept).listen(port, serverResponse->{
+        vertx.createHttpServer().requestHandler(router).listen(port, serverResponse->{
         	if (serverResponse.succeeded()) {
 				startFuture.complete();
 				logger.info("EventBus HTTP server started on http://localhost:{}", port);
